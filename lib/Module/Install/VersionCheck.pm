@@ -51,7 +51,7 @@ sub _get_git_tag_version {
     my $self = shift;
     return $DEFAULT unless -e '.git';
     require Capture::Tiny;
-    my $text = Capture::Tiny::capture_merged(sub { system('git tags') });
+    my $text = Capture::Tiny::capture_merged(sub { system('git tag') });
     my $version = $DEFAULT;
     for (split "\n", $text) {
         if (/\b(\d\.\d\d)\b/ and $1 > $version) {
