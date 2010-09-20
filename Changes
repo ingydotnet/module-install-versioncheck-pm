@@ -1,4 +1,8 @@
 ---
+version: 0.11
+date:    Mon Sep 20 09:47:04 PDT 2010
+changes: modify message
+---
 version: 0.10
 date:    Fri Sep 17 16:14:27 PDT 2010
 changes: initial release
