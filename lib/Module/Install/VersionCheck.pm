@@ -1,17 +1,22 @@
+##
+# name:      Module::Install::VersionCheck
+# abstract:  Show Author the Current Versions
+# author:    Ingy döt Net <ingy@cpan.org>
+# license:   perl
+# copyright: 2010, 2011
+
 package Module::Install::VersionCheck;
+use 5.008003;
 use strict;
 use warnings;
-use 5.008003;
 
 use Module::Install::Base;
+use base 'Module::Install::Base';
+
+our $VERSION = '0.12';
+our $AUTHOR_ONLY = 1;
 
 my $DEFAULT = '0.00';
-
-use vars qw($VERSION @ISA);
-BEGIN {
-    $VERSION = '0.11';
-    @ISA     = 'Module::Install::Base';
-}
 
 sub version_check {
     my $self = shift;
@@ -68,12 +73,6 @@ sub _report {
 
 1;
 
-=encoding utf8
-
-=head1 NAME
-
-Module::Install::VersionCheck - Show Author the Current Versions
-
 =head1 SYNOPSIS
 
     use inc::Module::Install;
@@ -90,18 +89,3 @@ Module::Install::VersionCheck - Show Author the Current Versions
 This module will report the current Module Version, Changes Version, and
 GitHub tag (if appropriate), so the author can easily see if the
 versions need to be updated when preparing a release.
-
-=head1 AUTHOR
-
-Ingy döt Net <ingy@cpan.org>
-
-=head1 COPYRIGHT
-
-Copyright (c) 2010. Ingy döt Net.
-
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
-
-See L<http://www.perl.com/perl/misc/Artistic.html>
-
-=cut

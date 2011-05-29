@@ -1,4 +1,8 @@
 ---
+version: 0.12
+date:    Mon May 30 00:14:46 EST 2011
+changes: Switch to Module::Package
+---
 version: 0.11
 date:    Mon Sep 20 09:47:04 PDT 2010
 changes: modify message
