@@ -13,7 +13,7 @@ use warnings;
 use Module::Install::Base;
 use base 'Module::Install::Base';
 
-our $VERSION = '0.13';
+our $VERSION = '0.14';
 our $AUTHOR_ONLY = 1;
 
 my $DEFAULT = '0.00';
