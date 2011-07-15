@@ -1,4 +1,8 @@
 ---
+version: 0.15
+date:    Fri Jul 15 11:14:38 CDT 2011
+changes: Accept more version formats
+---
 version: 0.14
 date:    Wed Jun  1 20:10:34 EST 2011
 changes: Rerelease with Module::Package 0.19

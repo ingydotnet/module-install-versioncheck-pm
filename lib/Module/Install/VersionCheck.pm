@@ -13,10 +13,12 @@ use warnings;
 use Module::Install::Base;
 use base 'Module::Install::Base';
 
-our $VERSION = '0.14';
+our $VERSION = '0.15';
 our $AUTHOR_ONLY = 1;
 
 my $DEFAULT = '0.00';
+
+my $version_match = qr/\b(\d\.\d\d[_0-9\.]*)\b/;
 
 sub version_check {
     my $self = shift;
@@ -48,7 +50,7 @@ sub _get_changes_version {
     return $DEFAULT unless -e 'Changes';
     open IN, 'Changes' or die "Can't open 'Changes' for input: $!";
     my $text = do {local $/; <IN>};
-    $text =~ /\b(\d\.\d\d)\b/ or return $DEFAULT;
+    $text =~ $version_match or return $DEFAULT;
     return $1;
 }
 
@@ -59,7 +61,7 @@ sub _get_git_tag_version {
     my $text = Capture::Tiny::capture_merged(sub { system('git tag') });
     my $version = $DEFAULT;
     for (split "\n", $text) {
-        if (/\b(\d\.\d\d)\b/ and $1 > $version) {
+        if ($_ =~ $version_match and $1 > $version) {
             $version = $1;
         }
     }
