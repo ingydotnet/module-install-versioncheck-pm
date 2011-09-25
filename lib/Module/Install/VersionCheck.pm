@@ -6,14 +6,14 @@
 # copyright: 2010, 2011
 
 package Module::Install::VersionCheck;
-use 5.008003;
+use 5.008001;
 use strict;
 use warnings;
 
 use Module::Install::Base;
 use base 'Module::Install::Base';
 
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 our $AUTHOR_ONLY = 1;
 
 my $DEFAULT = '0.00';
