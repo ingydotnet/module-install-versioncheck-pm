@@ -1,9 +1,9 @@
 =meta: 0.0.1
 
 name: Module-Install-VersionCheck
-version: 0.17
+version: 0.18
 abstract: Show Author the Current Versions
-homepage: https://metacpan.org/release/Module-Install-ManifestSkip
+homepage: https://metacpan.org/release/Module-Install-VersionCheck
 
 license: perl
 copyright: 2010-2014. Ingy döt Net.
