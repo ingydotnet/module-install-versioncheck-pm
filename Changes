@@ -1,4 +1,9 @@
 ---
+version: 0.17
+date:    Wed Aug 13 22:25:49 PDT 2014
+changes:
+- Switch to Zilla::Dist
+---
 version: 0.16
 date:    Sun Sep 25 04:08:21 CEST 2011
 changes:
@@ -7,24 +12,30 @@ changes:
 ---
 version: 0.15
 date:    Fri Jul 15 11:14:38 CDT 2011
-changes: Accept more version formats
+changes:
+- Accept more version formats
 ---
 version: 0.14
 date:    Wed Jun  1 20:10:34 EST 2011
-changes: Rerelease with Module::Package 0.19
+changes:
+- Rerelease with Module::Package 0.19
 ---
 version: 0.13
 date:    Mon May 30 20:38:26 EST 2011
-changes: Rerelease with Module::Package 0.18
+changes:
+- Rerelease with Module::Package 0.18
 ---
 version: 0.12
 date:    Mon May 30 00:14:46 EST 2011
-changes: Switch to Module::Package
+changes:
+- Switch to Module::Package
 ---
 version: 0.11
 date:    Mon Sep 20 09:47:04 PDT 2010
-changes: modify message
+changes:
+- modify message
 ---
 version: 0.10
 date:    Fri Sep 17 16:14:27 PDT 2010
-changes: initial release
+changes:
+- initial release

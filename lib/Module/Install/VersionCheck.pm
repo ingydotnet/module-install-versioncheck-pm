@@ -1,19 +1,11 @@
-##
-# name:      Module::Install::VersionCheck
-# abstract:  Show Author the Current Versions
-# author:    Ingy döt Net <ingy@cpan.org>
-# license:   perl
-# copyright: 2010, 2011
-
+use strict; use warnings;
 package Module::Install::VersionCheck;
-use 5.008001;
-use strict;
-use warnings;
 
 use Module::Install::Base;
+our $VERSION = '0.17';
+
 use base 'Module::Install::Base';
 
-our $VERSION = '0.16';
 our $AUTHOR_ONLY = 1;
 
 my $DEFAULT = '0.00';
@@ -74,20 +66,3 @@ sub _report {
 }
 
 1;
-
-=head1 SYNOPSIS
-
-    use inc::Module::Install;
-
-    name     'Foo';
-    all_from 'lib/Foo.pm';
-
-    version_check;
-
-    WriteAll;
-
-=head1 DESCRIPTION
-
-This module will report the current Module Version, Changes Version, and
-GitHub tag (if appropriate), so the author can easily see if the
-versions need to be updated when preparing a release.
