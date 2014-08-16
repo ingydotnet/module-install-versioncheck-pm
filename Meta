@@ -1,29 +1,26 @@
-=meta: 0.0.1
+=meta: 0.0.2
 
 name: Module-Install-VersionCheck
-version: 0.20
+version: 0.21
 abstract: Show Author the Current Versions
 homepage: https://metacpan.org/release/Module-Install-VersionCheck
-
+language: perl
 license: perl
-copyright: 2010-2014. Ingy döt Net.
+copyright: 2010-2014
+
 author:
   name: Ingy döt Net
   email: ingy@cpan.org
+  homepage: http://ingy.net
   github: ingydotnet
   twitter: ingydotnet
   freenode: ingy
-  homepage: http://ingy.net
-
-requires:
-  perl: 5.8.1
-  Module::Install: 1.10
 
 devel:
   git: https://github.com/ingydotnet/module-install-versioncheck-pm
   bug: https://github.com/ingydotnet/module-install-versioncheck-pm/issues
   irc: irc.freenode.net#pkg
 
-=travis:
-  type: perl
-  irc: irc.freenode.net#pkg
+requires:
+  perl: 5.8.1
+  Module::Install: 1.10
