@@ -2,7 +2,7 @@ use strict; use warnings;
 package Module::Install::VersionCheck;
 
 use Module::Install::Base;
-our $VERSION = '0.19';
+our $VERSION = '0.20';
 
 use base 'Module::Install::Base';
 
