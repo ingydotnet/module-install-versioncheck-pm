@@ -1,7 +1,7 @@
 =meta: 0.0.1
 
 name: Module-Install-VersionCheck
-version: 0.18
+version: 0.19
 abstract: Show Author the Current Versions
 homepage: https://metacpan.org/release/Module-Install-VersionCheck
 
